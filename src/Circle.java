@@ -23,6 +23,7 @@ public class Circle extends Shape {
 
     public String toString () {
         return "A circle with radius " + radius +
-                "\nThe Area: " + calculateArea() + " | The Circumference: " + calculateCircumference();
+                "\nThe Area: " + calculateArea() +
+                " | The Circumference: " + calculateCircumference();
     }
 }

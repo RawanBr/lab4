@@ -15,12 +15,12 @@ public class Main {
 
         switch (choice) {
             case 1:
-                System.out.println("Enter the circle radius: ");
+                System.out.println("Enter the radius of the circle : ");
                 double radius = input.nextDouble();
                 Circle circle = new Circle(radius);
 
                 System.out.println("------------------------------");
-                System.out.println(circle.toString());
+                System.out.println(circle);
                 System.out.println("------------------------------");
                 break;
 
@@ -32,7 +32,7 @@ public class Main {
                 Rectangle rectangle = new Rectangle(heigh, width);
 
                 System.out.println("------------------------------");
-                System.out.println(rectangle.toString());
+                System.out.println(rectangle);
                 System.out.println("------------------------------");
                 break;
 
@@ -44,23 +44,24 @@ public class Main {
                 Triangle triangle = new Triangle(height, base);
 
                 System.out.println("------------------------------");
-                System.out.println(triangle.toString());
+                System.out.println(triangle);
                 System.out.println("------------------------------");
                 break;
 
             default:
+                System.out.println("------------------------------");
                 if (choice == 0) {
+                    System.out.println("        PROGRAM ENDED");
+                    System.out.println("------------------------------");
                     valid = false;
                     break;
                 }
                 else {
-                    System.out.println("------------------------------");
-                    System.out.println("Invalid input, try again");
+                    System.out.println("   Invalid input, try again");
                     System.out.println("------------------------------");
                 }
         }
     }
-
 
 
     }
